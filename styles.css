@@ -993,32 +993,6 @@ body {
 /* Видео: видим кадър и възможност за ръчно пускане */
 .slide video { display: block; width: 100%; max-width: 100%; object-fit: cover; background: #080c12; }
 
-
-/* Социални икони във футъра */
-.footer-socials {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-.footer-socials a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    color: var(--muted);
-    transition: color .2s ease, transform .2s ease;
-}
-.footer-socials a:hover {
-    color: var(--lime);
-    transform: translateY(-2px);
-}
-.footer-socials svg {
-    display: block;
-    width: 22px;
-    height: 22px;
-}
-
 /* Пулсираща статус точка до FPV VIDEO PRODUCTION */
 .pulse-dot {
     position: relative;
@@ -1047,42 +1021,14 @@ body {
     .pulse-dot::after { animation: none; }
 }
 
-.footer-legal {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.footer-legal a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    color: #888888;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.footer-legal a:hover {
-    color: #baff35;
-}
-
-@media (max-width: 600px) {
-    .footer-legal {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
-
-
-/* FOOTER — desktop */
+/* FINAL FOOTER LAYOUT */
 .footer {
-    border-top: 1px solid var(--line);
-    padding: 28px 7vw;
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 20px;
+    padding: 30px 7vw;
+    border-top: 1px solid var(--line);
     color: #85847e;
     font-size: 10px;
 }
@@ -1096,13 +1042,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     text-align: center;
 }
 
-.footer-center > p {
+.footer-center p {
     margin: 0;
-    color: #85847e;
     font-size: 11px;
 }
 
@@ -1116,9 +1061,8 @@ body {
 .footer-legal a {
     font-family: 'Oswald', sans-serif;
     font-size: 11px;
-    color: #888888;
-    text-decoration: none;
-    transition: color 0.2s ease;
+    color: #888;
+    transition: color .2s ease;
 }
 
 .footer-legal a:hover {
@@ -1127,15 +1071,15 @@ body {
 
 .footer-socials {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     gap: 18px;
 }
 
 .footer-socials a {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 34px;
     height: 34px;
     color: var(--muted);
@@ -1153,33 +1097,30 @@ body {
     height: 22px;
 }
 
-/* FOOTER — mobile */
-
+/* MOBILE FOOTER */
 @media (max-width: 600px) {
     .footer {
         display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 22px;
         padding: 30px 6vw;
+        text-align: center;
     }
 
     .footer > .logo {
-        order: 1;
-        justify-self: auto;
+        align-self: center;
     }
 
     .footer-center {
-        order: 2;
         width: 100%;
-        align-items: center;
+        order: 2;
     }
 
     .footer-socials {
-        order: 3;
-        justify-content: center;
         width: 100%;
+        justify-content: center;
+        order: 3;
     }
 }

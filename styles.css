@@ -1154,25 +1154,32 @@ body {
 }
 
 /* FOOTER — mobile */
+
 @media (max-width: 600px) {
     .footer {
-        grid-template-columns: 1fr;
-        justify-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
         text-align: center;
         gap: 22px;
         padding: 30px 6vw;
     }
 
     .footer > .logo {
-        justify-self: center;
+        order: 1;
+        justify-self: auto;
     }
 
     .footer-center {
         order: 2;
+        width: 100%;
+        align-items: center;
     }
 
     .footer-socials {
-        justify-content: center;
         order: 3;
+        justify-content: center;
+        width: 100%;
     }
 }

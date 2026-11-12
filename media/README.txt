@@ -1,0 +1,1 @@
+Постави своите MP4 видеа тук: video-1.mp4, video-2.mp4, video-3.mp4, video-4.mp4. По желание добави постери video-1-poster.jpg до video-4-poster.jpg.

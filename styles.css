@@ -984,3 +984,7 @@ body {
   background: #080c12;
   cursor: pointer;
 }
+
+.btn-size{
+font-size:17px;
+}

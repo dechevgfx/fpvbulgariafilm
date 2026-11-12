@@ -992,6 +992,8 @@ body {
   cursor: pointer;
 }
 
-.btn-size{
-font-size:17px;
+/* Fix: keep package CTA text at the requested size.
+   This selector overrides the more specific .offer-card .btn rule above. */
+.offer-card .btn.btn-size {
+    font-size: 17px;
 }

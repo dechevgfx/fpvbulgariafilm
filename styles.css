@@ -997,3 +997,9 @@ body {
 .offer-card .btn.btn-size {
     font-size: 17px;
 }
+
+/* FINAL OVERRIDE — package buttons */
+.offer-card a.btn.btn-size,
+.offer-card .btn.btn-size {
+    font-size: 17px !important;
+}

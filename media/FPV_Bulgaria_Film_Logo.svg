@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title desc">
+  <title id="title">FPV Bulgaria Film</title>
+  <desc id="desc">FPV Bulgaria Film logo with a lime star and white typography.</desc>
+  <rect width="1000" height="260" fill="none"/>
+  <g fill="#F4F3EF">
+    <text x="12" y="190" font-family="Oswald, Impact, sans-serif" font-size="190" font-weight="700" letter-spacing="-9">FPV</text>
+    <text x="340" y="119" font-family="Montserrat, Arial, sans-serif" font-size="67" font-weight="800" letter-spacing="7">BULGARIA</text>
+    <text x="343" y="190" font-family="Montserrat, Arial, sans-serif" font-size="47" font-weight="800" letter-spacing="13" fill="#A5A39D">FILM</text>
+  </g>
+  <path d="M292 20 L311 58 L349 77 L311 96 L292 134 L273 96 L235 77 L273 58 Z" fill="#D2F36B"/>
+</svg>

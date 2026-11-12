@@ -181,3 +181,32 @@ h1 em,h2 em{font-style:normal;color:var(--lime)}
 @media screen and (max-width:600px){
 .btn,.offer-card .btn,.offer-grid .offer-card .btn{font-size:11px!important;gap:10px}
 }
+
+/* Animated FPV recording indicator */
+.hero .eyebrow span {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #d2f36b;
+    box-shadow: 0 0 10px rgba(210, 243, 107, 0.9);
+    animation: fpv-recording 1.8s ease-out infinite;
+}
+
+@keyframes fpv-recording {
+    0% {
+        box-shadow: 0 0 0 0 rgba(210, 243, 107, 0.8);
+        transform: scale(1);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(210, 243, 107, 0);
+        transform: scale(1.15);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(210, 243, 107, 0);
+        transform: scale(1);
+    }
+}

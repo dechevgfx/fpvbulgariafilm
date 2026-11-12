@@ -630,6 +630,7 @@ h2 em {
         right: 7vw;
     }
 }
+
 @media (max-width: 600px) {
     .header {
         height: 68px;
@@ -750,11 +751,13 @@ h2 em {
     font-size: 10px;
     line-height: 1.7;
 }
+
 @media (max-width: 800px) {
     .offer-grid.secondary-offers {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media (max-width: 600px) {
     .offer-grid.secondary-offers {
         grid-template-columns: 1fr;
@@ -919,6 +922,10 @@ body {
     font-size: 11px;
     line-height: 1.7;
     margin: 10px 0 0;
+}
+
+.btn-size{
+    font-size: 15px;
 }
 @media (max-width: 600px) {
     .comparison-intro {

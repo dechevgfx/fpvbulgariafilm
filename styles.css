@@ -1046,3 +1046,29 @@ body {
 @media (prefers-reduced-motion: reduce) {
     .pulse-dot::after { animation: none; }
 }
+
+.footer-legal {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-legal a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #baff35;
+}
+
+@media (max-width: 600px) {
+    .footer-legal {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
